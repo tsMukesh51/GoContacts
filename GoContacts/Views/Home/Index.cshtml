@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">GoContacts</h1>
+        <p class="lead">Organize contacts on a fly</p>
+    </section>
+
+    <div class="col">
+            <button class="btn btn-outline-primary">@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "nav-link" })</button>
+            <button class="btn btn-outline-primary">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })</button>
+    </div>
+</main>

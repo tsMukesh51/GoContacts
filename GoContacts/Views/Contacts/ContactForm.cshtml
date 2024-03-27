@@ -1,0 +1,55 @@
+﻿
+@model GoContacts.Models.Contact
+@{
+    ViewBag.Title = Model.Id == 0 ? "Create Contact" : "Edit Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@(Model.Id == 0 ? "Create Contact" : "Edit Contact")</h2>
+
+@using (Html.BeginForm("Save", "Contacts"))
+{
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+    <div class="m-3">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    <div class="m-3">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <div class="m-3">
+        @Html.LabelFor(m => m.Phone)
+        @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Phone)
+    </div>
+    <div class="m-3">
+        @Html.LabelFor(m => m.Address)
+        @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Address)
+    </div>
+    <div class="m-3">
+        @Html.LabelFor(m => m.Birthday)
+        @Html.TextBoxFor(m => m.Birthday, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Birthday)
+    </div>
+
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.ApplicationUserId)
+    @*@Html.AntiForgeryToken()*@
+    <button type="submit" class="btn btn-primary">@(Model.Id == 0 ? "Create" : "Update")</button>
+    <button type="button" id="cancelButton" class="btn btn-danger">Cancel</button>
+
+}
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cancelButton').click(function () {
+                window.history.back();
+            });
+        });
+    </script>
+}

@@ -1,0 +1,35 @@
+﻿
+@model GoContacts.Models.GroupTag
+@{
+    ViewBag.Title = Model.Id == 0 ? "Create Group" : "Edit Group";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@(Model.Id == 0 ? "Create Group" : "Edit Group")</h2>
+
+@using (Html.BeginForm("Save", "Contacts"))
+{
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+    <div class="m-3">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    @Html.HiddenFor(m => m.Id)
+    @Html.HiddenFor(m => m.ApplicationUserId)
+    @*@Html.AntiForgeryToken()*@
+    <button type="submit" class="btn btn-primary">@(Model.Id == 0 ? "Create" : "Update")</button>
+    <a href="@Url.Action("Delete", "GroupTags")/@Model.Id"  id="delete-group-tag" class="btn btn-danger">Delete</a>
+}
+
+@section scripts
+    {
+    <script>
+        $('#delete-group-tag').click(function () {
+            if (confirm('Are you sure you want to delete this Group?')) {
+                window.location.href = $(this).attr('href');
+            }
+            return false;
+        });
+    </script>
+    }
