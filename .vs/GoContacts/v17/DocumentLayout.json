@@ -3,36 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\views\\contacts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\views\\contacts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\controllers\\api\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\controllers\\api\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\views\\grouptags\\grouptagform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\views\\grouptags\\grouptagform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\views\\contacts\\contactform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\views\\contacts\\contactform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\controllers\\grouptagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\controllers\\grouptagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_GoContacts_20240325085156/True/SqlTable/dbo.ContactGroupTags.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\views\\contacts\\contactlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\views\\contacts\\contactlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\views\\contacts\\contactform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\views\\contacts\\contactform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\controllers\\grouptagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\controllers\\grouptagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\viewmodels\\contactgrouptagform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\viewmodels\\contactgrouptagform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\models\\contactgrouptag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\models\\contactgrouptag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\views\\grouptags\\grouptagform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\views\\grouptags\\grouptagform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\models\\grouptag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\models\\grouptag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\gocontacts\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,33 +57,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "GoContacts\\Models\\Contact.cs",
               "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Models\\Contact.cs",
               "RelativeToolTip": "GoContacts\\Models\\Contact.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAABoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T17:11:47.972Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "GroupTag.cs",
               "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Models\\GroupTag.cs",
               "RelativeDocumentMoniker": "GoContacts\\Models\\GroupTag.cs",
               "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Models\\GroupTag.cs",
               "RelativeToolTip": "GoContacts\\Models\\GroupTag.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAQwBAAAAAIAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAQwA0AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-26T16:22:10.984Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactsController.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Controllers\\API\\ContactsController.cs",
+              "RelativeDocumentMoniker": "GoContacts\\Controllers\\API\\ContactsController.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Controllers\\API\\ContactsController.cs",
+              "RelativeToolTip": "GoContacts\\Controllers\\API\\ContactsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T16:58:21.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.ContactGroupTags [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/aspnet_GoContacts_20240325085156/True/SqlTable/dbo.ContactGroupTags.sql",
+              "ToolTip": "dbo.ContactGroupTags [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-28T16:52:21.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContactGroupTag.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Models\\ContactGroupTag.cs",
+              "RelativeDocumentMoniker": "GoContacts\\Models\\ContactGroupTag.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Models\\ContactGroupTag.cs",
+              "RelativeToolTip": "GoContacts\\Models\\ContactGroupTag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T09:18:58.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "GoContacts\\App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "GoContacts\\App_Start\\FilterConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T07:16:44.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\ContactForm.cshtml",
+              "RelativeDocumentMoniker": "GoContacts\\Views\\Contacts\\ContactForm.cshtml",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\ContactForm.cshtml",
+              "RelativeToolTip": "GoContacts\\Views\\Contacts\\ContactForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-28T07:12:31.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactGroupTagForm.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\ViewModels\\ContactGroupTagForm.cs",
+              "RelativeDocumentMoniker": "GoContacts\\ViewModels\\ContactGroupTagForm.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\ViewModels\\ContactGroupTagForm.cs",
+              "RelativeToolTip": "GoContacts\\ViewModels\\ContactGroupTagForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T06:39:11.376Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -76,76 +168,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "GroupTagForm.cshtml",
               "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\GroupTags\\GroupTagForm.cshtml",
               "RelativeDocumentMoniker": "GoContacts\\Views\\GroupTags\\GroupTagForm.cshtml",
               "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\GroupTags\\GroupTagForm.cshtml",
               "RelativeToolTip": "GoContacts\\Views\\GroupTags\\GroupTagForm.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-26T16:22:02.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GroupTagsController.cs",
-              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Controllers\\GroupTagsController.cs",
-              "RelativeDocumentMoniker": "GoContacts\\Controllers\\GroupTagsController.cs",
-              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Controllers\\GroupTagsController.cs",
-              "RelativeToolTip": "GoContacts\\Controllers\\GroupTagsController.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAowEMAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T16:18:44.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ContactList.cshtml",
-              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\ContactList.cshtml",
-              "RelativeDocumentMoniker": "GoContacts\\Views\\Contacts\\ContactList.cshtml",
-              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\ContactList.cshtml",
-              "RelativeToolTip": "GoContacts\\Views\\Contacts\\ContactList.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-26T16:17:43.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactForm.cshtml",
-              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\ContactForm.cshtml",
-              "RelativeDocumentMoniker": "GoContacts\\Views\\Contacts\\ContactForm.cshtml",
-              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\ContactForm.cshtml",
-              "RelativeToolTip": "GoContacts\\Views\\Contacts\\ContactForm.cshtml",
-              "ViewState": "AQIAABkAAAAAAAAAAAAcwAMAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-26T06:01:52.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\Index.cshtml",
-              "RelativeDocumentMoniker": "GoContacts\\Views\\Contacts\\Index.cshtml",
-              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\Index.cshtml",
-              "RelativeToolTip": "GoContacts\\Views\\Contacts\\Index.cshtml",
-              "ViewState": "AQIAACIAAAAAAAAAAAAmwDAAAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-26T04:59:38.052Z",
+              "WhenOpened": "2024-03-26T16:22:02.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ContactsController.cs",
               "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Controllers\\ContactsController.cs",
               "RelativeDocumentMoniker": "GoContacts\\Controllers\\ContactsController.cs",
               "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Controllers\\ContactsController.cs",
               "RelativeToolTip": "GoContacts\\Controllers\\ContactsController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAuwEMAAAAJAAAA",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAowHgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T04:55:46.565Z"
+              "WhenOpened": "2024-03-26T04:55:46.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GroupTagsController.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Controllers\\GroupTagsController.cs",
+              "RelativeDocumentMoniker": "GoContacts\\Controllers\\GroupTagsController.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Controllers\\GroupTagsController.cs",
+              "RelativeToolTip": "GoContacts\\Controllers\\GroupTagsController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwCAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T16:18:44.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContactList.cshtml",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\ContactList.cshtml",
+              "RelativeDocumentMoniker": "GoContacts\\Views\\Contacts\\ContactList.cshtml",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Views\\Contacts\\ContactList.cshtml",
+              "RelativeToolTip": "GoContacts\\Views\\Contacts\\ContactList.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwCoAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-26T16:17:43.68Z",
+              "EditorCaption": ""
             }
           ]
         }

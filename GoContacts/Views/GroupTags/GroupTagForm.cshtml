@@ -7,7 +7,7 @@
 
 <h2>@(Model.Id == 0 ? "Create Group" : "Edit Group")</h2>
 
-@using (Html.BeginForm("Save", "Contacts"))
+@using (Html.BeginForm("Save", "GroupTags"))
 {
     @Html.ValidationSummary(false, "", new { @class = "text-danger" })
     <div class="m-3">

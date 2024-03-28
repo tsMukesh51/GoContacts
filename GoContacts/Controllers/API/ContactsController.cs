@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -16,27 +17,24 @@ namespace GoContacts.Controllers.API
         {
             _context = new ApplicationDbContext();
         }
-
-        [HttpGet]
-        public IEnumerable<Contact> GetAll() 
-        {
-            return _context.Contacts.Where(c => c.ApplicationUserId == User.Identity.GetUserId());
-        }
         [HttpPost]
         public IEnumerable<Contact> DeleteMultiple(List<int> ids)
         {
             IEnumerable<Contact> contacts = new List<Contact>();
             foreach (int id in ids)
             {
-                Contact contact = _context.Contacts.SingleOrDefault(c => c.Id == id);
-                if (contact == null)
+                Contact dbContact = _context.Contacts.SingleOrDefault(c => c.Id == id);
+                if (dbContact == null)
                 {
                     throw new HttpResponseException(HttpStatusCode.NotFound);
                 }
                 else
                 {
-                    _context.Contacts.Remove(contact);
-                    contacts.Append(contact);
+
+                    IEnumerable<ContactGroupTag> dbContactGroupTags = _context.ContactGroupTags.Where(c => c.ContactId == dbContact.Id);
+                    _context.ContactGroupTags.RemoveRange(dbContactGroupTags);
+                    _context.Contacts.Remove(dbContact);
+                    contacts.Append(dbContact);
                 }
             }
             _context.SaveChanges();

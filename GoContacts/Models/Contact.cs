@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace GoContacts.Models
@@ -23,6 +24,7 @@ namespace GoContacts.Models
         [StringLength(128)]
         public string ApplicationUserId { get; set; }
         public ApplicationUser User { get; set; }
+        public ICollection<ContactGroupTag> ContactGroupTags { get; set; }
         public Contact()
         {
             ApplicationUserId = "zxghop";

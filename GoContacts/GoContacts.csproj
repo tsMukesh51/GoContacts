@@ -223,6 +223,8 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\ContactGroupTagForm.cs" />
+    <Compile Include="ViewModels\ContactGroupTags.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\aspnet-GoContacts-20240325085156.mdf" />

@@ -1,45 +1,50 @@
 ﻿
-@model GoContacts.Models.Contact
+@model GoContacts.ViewModels.ContactGroupTagForm
 @{
-    ViewBag.Title = Model.Id == 0 ? "Create Contact" : "Edit Contact";
+    ViewBag.Title = Model.Contact.Id == 0 ? "Create Contact" : "Edit Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@(Model.Id == 0 ? "Create Contact" : "Edit Contact")</h2>
+<h2>@(Model.Contact.Id == 0 ? "Create Contact" : "Edit Contact")</h2>
 
 @using (Html.BeginForm("Save", "Contacts"))
 {
     @Html.ValidationSummary(false, "", new { @class = "text-danger" })
     <div class="m-3">
-        @Html.LabelFor(m => m.Name)
-        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Name)
+        @Html.LabelFor(m => m.Contact.Name)
+        @Html.TextBoxFor(m => m.Contact.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Contact.Name)
     </div>
     <div class="m-3">
-        @Html.LabelFor(m => m.Email)
-        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Email)
+        @Html.LabelFor(m => m.Contact.Email)
+        @Html.TextBoxFor(m => m.Contact.Email, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Contact.Email)
     </div>
     <div class="m-3">
-        @Html.LabelFor(m => m.Phone)
-        @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Phone)
+        @Html.LabelFor(m => m.Contact.Phone)
+        @Html.TextBoxFor(m => m.Contact.Phone, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Contact.Phone)
     </div>
     <div class="m-3">
-        @Html.LabelFor(m => m.Address)
-        @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Address)
+        @Html.LabelFor(m => m.Contact.Address)
+        @Html.TextBoxFor(m => m.Contact.Address, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Contact.Address)
     </div>
     <div class="m-3">
-        @Html.LabelFor(m => m.Birthday)
-        @Html.TextBoxFor(m => m.Birthday, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Birthday)
+        @Html.LabelFor(m => m.Contact.Birthday)
+        @Html.TextBoxFor(m => m.Contact.Birthday, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Contact.Birthday)
+    </div>
+    <div class="m-3">
+        @Html.LabelFor(m => m.SelectedGroupTags)
+        @Html.ListBoxFor(m => m.SelectedGroupTags, new MultiSelectList(Model.GroupTags, "Id", "Name"), new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.SelectedGroupTags)
     </div>
 
-    @Html.HiddenFor(m => m.Id)
-    @Html.HiddenFor(m => m.ApplicationUserId)
+    @Html.HiddenFor(m => m.Contact.Id)
+    @Html.HiddenFor(m => m.Contact.ApplicationUserId)
     @*@Html.AntiForgeryToken()*@
-    <button type="submit" class="btn btn-primary">@(Model.Id == 0 ? "Create" : "Update")</button>
+    <button type="submit" class="btn btn-primary">@(Model.Contact.Id == 0 ? "Create" : "Update")</button>
     <button type="button" id="cancelButton" class="btn btn-danger">Cancel</button>
 
 }
