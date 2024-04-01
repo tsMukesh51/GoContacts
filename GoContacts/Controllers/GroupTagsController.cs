@@ -15,6 +15,11 @@ namespace GoContacts.Controllers
         {
             _context = new ApplicationDbContext();
         }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+            base.Dispose(disposing);
+        }
         public ActionResult Index()
         {
             return RedirectToAction("Index","Contacts");

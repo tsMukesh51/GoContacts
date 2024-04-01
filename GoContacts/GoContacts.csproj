@@ -187,6 +187,7 @@
     <Compile Include="Controllers\GroupTagsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DTOs\ApplicationUserDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -213,6 +214,10 @@
     <Compile Include="Migrations\202403260607403_EditContactModelRequiredFields.cs" />
     <Compile Include="Migrations\202403260607403_EditContactModelRequiredFields.Designer.cs">
       <DependentUpon>202403260607403_EditContactModelRequiredFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403300531022_EditUserAddIsEnabled.cs" />
+    <Compile Include="Migrations\202403300531022_EditUserAddIsEnabled.Designer.cs">
+      <DependentUpon>202403300531022_EditUserAddIsEnabled.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -250,6 +255,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Media\attachment-security.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -279,7 +285,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -301,12 +306,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\ContactList.cshtml" />
     <Content Include="Views\Contact\CreateContactForm.cshtml" />
     <Content Include="Views\Contacts\Index.cshtml" />
     <Content Include="Views\Contacts\ContactForm.cshtml" />
     <Content Include="Views\Contacts\ContactList.cshtml" />
     <Content Include="Views\GroupTags\GroupTagForm.cshtml" />
+    <Content Include="Views\Account\ListUsers.cshtml" />
+    <Content Include="Views\Account\UserAccessForm.cshtml" />
+    <Content Include="Views\Home\UserBlocked.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -354,6 +361,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403260607403_EditContactModelRequiredFields.resx">
       <DependentUpon>202403260607403_EditContactModelRequiredFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403300531022_EditUserAddIsEnabled.resx">
+      <DependentUpon>202403300531022_EditUserAddIsEnabled.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

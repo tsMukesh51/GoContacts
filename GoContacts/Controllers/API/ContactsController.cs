@@ -17,6 +17,11 @@ namespace GoContacts.Controllers.API
         {
             _context = new ApplicationDbContext();
         }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+            base.Dispose(disposing);
+        }
         [HttpPost]
         public IEnumerable<Contact> DeleteMultiple(List<int> ids)
         {

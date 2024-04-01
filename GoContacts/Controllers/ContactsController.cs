@@ -20,39 +20,53 @@ namespace GoContacts.Controllers
         {
             _context = new ApplicationDbContext();
         }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+            base.Dispose(disposing);
+        }
         public ActionResult Index(int? group)
         {
             string userId = User.Identity.GetUserId();
-            //IEnumerable<Contact>
-            IQueryable<Contact> contacts = _context.Contacts.Include(c => c.ContactGroupTags).Where(c => c.ApplicationUserId == userId);
-            IEnumerable<Contact> contactsInGroup;
-            //IEnumerable<ContactGroupTag> contactGroups = _context.ContactGroupTags.ToList();
-            if (group != null)
+            if(_context.Users.SingleOrDefault(u => u.Id == userId).IsEnabled == true)
             {
-                contactsInGroup = contacts.Where(c => c.ContactGroupTags.Any(cg => cg.GroupTagId == group.Value));
-            }
-            else
-            {
-                contactsInGroup = contacts;
-            }
-            //return View(contacts);
+                //IEnumerable<Contact>
+                IQueryable<Contact> contacts = _context.Contacts.Include(c => c.ContactGroupTags).Where(c => c.ApplicationUserId == userId);
+                IEnumerable<Contact> contactsInGroup;
+                //IEnumerable<ContactGroupTag> contactGroups = _context.ContactGroupTags.ToList();
+                if (group != null)
+                {
+                    contactsInGroup = contacts.Where(c => c.ContactGroupTags.Any(cg => cg.GroupTagId == group.Value));
+                }
+                else
+                {
+                    contactsInGroup = contacts;
+                }
+                //return View(contacts);
 
-            IEnumerable<GroupTag> groupTags = _context.GroupTags.Where(c => c.ApplicationUserId == userId);
+                IEnumerable<GroupTag> groupTags = _context.GroupTags.Where(c => c.ApplicationUserId == userId);
 
-            ContactGroupTags contactGroupTags = new ContactGroupTags()
-            {
-                Contacts = contactsInGroup,
-                GroupTags = groupTags
-            };
-            return View("ContactList", contactGroupTags);
+                ContactGroupTags contactGroupTags = new ContactGroupTags()
+                {
+                    Contacts = contactsInGroup,
+                    GroupTags = groupTags
+                };
+                return View("ContactList", contactGroupTags);
+            }
+            return RedirectToAction("Index", "Home");
         }
         public ActionResult Create() 
         {
             string userId = User.Identity.GetUserId();
+            IEnumerable<GroupTag> dbGroupTag = _context.GroupTags.Where(c => c.ApplicationUserId == userId); 
+            if (!dbGroupTag.Any())
+            {
+                dbGroupTag = new List<GroupTag>();
+            }
             ContactGroupTagForm form = new ContactGroupTagForm()
             {
                 Contact = new Contact(),
-                GroupTags = _context.GroupTags.Where(c => c.ApplicationUserId == userId)
+                GroupTags = dbGroupTag
             };
             return View("ContactForm", form);
         }
@@ -84,13 +98,16 @@ namespace GoContacts.Controllers
             if (contactGroupTagForm.Contact.Id == 0)
             {
                 _context.Contacts.Add(contactGroupTagForm.Contact);
-                foreach(int groupId in contactGroupTagForm.SelectedGroupTags)
+                if (contactGroupTagForm.SelectedGroupTags != null && contactGroupTagForm.SelectedGroupTags.Count() > 0)
                 {
-                    _context.ContactGroupTags.Add(new ContactGroupTag()
+                    foreach (int groupId in contactGroupTagForm.SelectedGroupTags)
                     {
-                        ContactId = contactGroupTagForm.Contact.Id,
-                        GroupTagId = groupId
-                    });
+                        _context.ContactGroupTags.Add(new ContactGroupTag()
+                        {
+                            ContactId = contactGroupTagForm.Contact.Id,
+                            GroupTagId = groupId
+                        });
+                    }
                 }
             }
             else
@@ -107,9 +124,12 @@ namespace GoContacts.Controllers
                 dbContact.Birthday = contactGroupTagForm.Contact.Birthday;
                 IEnumerable<ContactGroupTag> dbContactGroupTags = _context.ContactGroupTags.Where(c => c.ContactId == dbContact.Id);
                 _context.ContactGroupTags.RemoveRange(dbContactGroupTags);
-                foreach (int groupTagId in contactGroupTagForm.SelectedGroupTags)
+                if(contactGroupTagForm.SelectedGroupTags != null && contactGroupTagForm.SelectedGroupTags.Count() > 0)
                 {
-                    _context.ContactGroupTags.Add(new ContactGroupTag { ContactId = dbContact.Id, GroupTagId = groupTagId });
+                    foreach (int groupTagId in contactGroupTagForm.SelectedGroupTags)
+                    {
+                        _context.ContactGroupTags.Add(new ContactGroupTag { ContactId = dbContact.Id, GroupTagId = groupTagId });
+                    }
                 }
             }
             _context.SaveChanges();

@@ -1,0 +1,48 @@
+﻿
+@model IEnumerable<GoContacts.DTOs.ApplicationUserDTO>
+@{
+    ViewBag.Title = "ListUsers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .user-list .badge {
+        width: 32px;
+        height: 32px;
+        border-radius: 9px;
+        display: inline-block;
+    }
+    .user-list .badge.enabled {
+        background-color: lawngreen;
+    }
+    .user-list .badge.disabled{
+        background-color: orangered;
+    }
+</style>
+
+<h2>ListUsers</h2>
+
+<table class="table user-list">
+    <thead>
+        <tr>
+            <th>UserName</th>
+            <th>Is Enabled</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (GoContacts.DTOs.ApplicationUserDTO user in Model)
+        {
+            <tr>
+                <td>
+                    <a href="@Url.Action("EditUserAccess","Account")/@user.Id" class="btn">
+                        <p>@user.UserName</p>
+                    </a>
+                </td>
+                <td>
+                    <div class="badge @(user.IsEnabled ? "enabled" : "disabled")"></div>
+                    <!--<input type="checkbox" name="userId" value="user-is-enabled" @(user.IsEnabled ? "checked" : "") />--> @*implement*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

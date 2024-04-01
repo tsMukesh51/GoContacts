@@ -119,3 +119,4 @@ C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\obj\Debug\G
 C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\obj\Debug\GoContacts.Migrations.EditContactModelAddUser.resources
 C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\obj\Debug\GoContacts.Migrations.RelateContactGroupTagModel.resources
 C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\obj\Debug\GoContacts.Migrations.EditContactModelRequiredFields.resources
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\obj\Debug\GoContacts.Migrations.EditUserAddIsEnabled.resources

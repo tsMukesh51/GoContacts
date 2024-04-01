@@ -9,6 +9,11 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using GoContacts.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
+using System.Collections.Generic;
+using GoContacts.DTOs;
+using System.Web.Http.Results;
 
 namespace GoContacts.Controllers
 {
@@ -17,13 +22,16 @@ namespace GoContacts.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        private ApplicationDbContext _context;
 
         public AccountController()
         {
+            _context = new ApplicationDbContext();
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
+            _context = new ApplicationDbContext();
             UserManager = userManager;
             SignInManager = signInManager;
         }
@@ -155,7 +163,12 @@ namespace GoContacts.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
+                    ////Temp code for Registering user for CanChangeUserAccess Role immediately
+                    //RoleStore<IdentityRole> roleStore = new RoleStore<IdentityRole>(new ApplicationDbContext());
+                    //RoleManager<IdentityRole> roleManager = new RoleManager<IdentityRole>(roleStore);
+                    //await roleManager.CreateAsync(new IdentityRole("CanChangeUserAccess"));
+                    //await UserManager.AddToRoleAsync(user.Id, "CanChangeUserAccess");
+                    //await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
@@ -421,6 +434,55 @@ namespace GoContacts.Controllers
             }
 
             base.Dispose(disposing);
+        }
+        public async Task<ActionResult> ListUsers()
+        {
+            if (User.IsInRole("CanChangeUserAccess"))
+            {
+                UserStore<ApplicationUser> userStore = new UserStore<ApplicationUser>(new ApplicationDbContext());
+                UserManager<ApplicationUser> userManager = new UserManager<ApplicationUser>(userStore);
+                List<ApplicationUserDTO> userNames = await userManager.Users.Select(u => new ApplicationUserDTO { UserName = u.UserName, IsEnabled = u.IsEnabled, Id = u.Id, Email = "" }).Where(u => u.UserName != "admin@gocontacts.com").ToListAsync();
+                //ApplicationUser adminUser = userManager.Users.Single(u => u.UserName == "admin@gocontacts.com");
+                //userNames.Remove(adminUser);
+                return View(userNames);
+            }
+            return RedirectToAction("Index", "Home");
+        }
+        public ActionResult EditUserAccess(string param)
+        {
+            if (User.IsInRole("CanChangeUserAccess"))
+            {
+                ApplicationUser applicationUser = _context.Users.SingleOrDefault(u => u.Id == param);
+                if (applicationUser == null)
+                {
+                    return HttpNotFound();
+                }
+                ApplicationUserDTO applicationUserDTO = new ApplicationUserDTO()
+                {
+                    Id = applicationUser.Id,
+                    UserName = applicationUser.UserName,
+                    IsEnabled = applicationUser.IsEnabled,
+                    Email = applicationUser.Email
+                };
+                return View("UserAccessForm", applicationUserDTO);
+            }
+            return RedirectToAction("Index", "Home");
+        }
+        public ActionResult SaveUserAccess(string userId, bool status)
+        {
+            if (User.IsInRole("CanChangeUserAccess"))
+            {
+                ApplicationUser applicationUser = _context.Users.SingleOrDefault(u => u.Id == userId);
+                if (applicationUser == null)
+                {
+                    return HttpNotFound();
+                }
+                applicationUser.IsEnabled = status;
+                _context.SaveChanges();
+                return RedirectToAction("EditUserAccess", "Account", new { param = userId });
+            }
+
+                return RedirectToAction("Index", "Home");
         }
 
         #region Helpers

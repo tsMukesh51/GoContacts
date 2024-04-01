@@ -1,0 +1,31 @@
+﻿
+@model GoContacts.DTOs.ApplicationUserDTO
+@{
+    ViewBag.Title = "UserAccessForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User Details</h2>
+
+<div>
+    <h4 class="m-3">@Model.UserName</h4>
+    <p class="m-3">@Model.Email</p>
+    <p class="m-3">@(Model.IsEnabled ? "User is Enabled" : "Use is Blocked")</p>
+    <div class="d-flex">
+        <a href="@Url.Action("SaveUserAccess", "Account")/?userId=@Model.Id&status=false" class="btn btn-danger">Disable</a>
+        <a href="@Url.Action("SaveUserAccess", "Account")/?userId=@Model.Id&status=true" class="btn btn-success">Enable</a>
+        <button type="button" id="cancelButton" class="btn btn-danger">Cancel</button>
+    </div>
+</div>
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval");
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cancelButton').click(function () {
+                window.history.back();
+            });
+        });
+    </script>
+}

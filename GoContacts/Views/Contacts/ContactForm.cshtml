@@ -32,7 +32,7 @@
     </div>
     <div class="m-3">
         @Html.LabelFor(m => m.Contact.Birthday)
-        @Html.TextBoxFor(m => m.Contact.Birthday, new { @class = "form-control" })
+        @Html.TextBoxFor(m => m.Contact.Birthday, "{0:dd MMM yyyy}", new { @class = "form-control" })
         @Html.ValidationMessageFor(m => m.Contact.Birthday)
     </div>
     <div class="m-3">
@@ -50,6 +50,7 @@
 }
 @section scripts
 {
+    @Scripts.Render("~/bundles/jqueryval");
     <script type="text/javascript">
         $(document).ready(function () {
             $('#cancelButton').click(function () {
