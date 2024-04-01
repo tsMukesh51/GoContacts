@@ -120,3 +120,17 @@ C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\obj\Debug\G
 C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\obj\Debug\GoContacts.Migrations.RelateContactGroupTagModel.resources
 C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\obj\Debug\GoContacts.Migrations.EditContactModelRequiredFields.resources
 C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\obj\Debug\GoContacts.Migrations.EditUserAddIsEnabled.resources
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\NUnit3.TestAdapter.dll
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\NUnit3.TestAdapter.pdb
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\nunit.engine.dll
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\nunit.engine.api.dll
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\nunit.engine.core.dll
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\testcentric.engine.metadata.dll
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\nunit.framework.dll
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\nunit.framework.legacy.dll
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\nunit.framework.xml
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\nunit.framework.legacy.xml
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\2321916\OneDrive - Cognizant\Projects\GoContacts\GoContacts\bin\System.Threading.Tasks.Extensions.xml
