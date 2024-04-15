@@ -10,15 +10,16 @@ using System.Web;
 using System.Web.Http;
 using System.Data.Entity;
 using System.Web.Mvc;
+using GoContacts.Data;
 
 namespace GoContacts.Controllers
 {
     public class ContactsController : Controller
     {
         private readonly ApplicationDbContext _context;
-        public ContactsController()
+        public ContactsController(ApplicationDbContext context = null)
         {
-            _context = new ApplicationDbContext();
+            _context = context?? new ApplicationDbContext();
         }
         protected override void Dispose(bool disposing)
         {
@@ -28,6 +29,7 @@ namespace GoContacts.Controllers
         public ActionResult Index(int? group)
         {
             string userId = User.Identity.GetUserId();
+            //Session[1]=userId;
             if(_context.Users.SingleOrDefault(u => u.Id == userId).IsEnabled == true)
             {
                 //IEnumerable<Contact>
@@ -51,6 +53,7 @@ namespace GoContacts.Controllers
                     Contacts = contactsInGroup,
                     GroupTags = groupTags
                 };
+                //ViewBag.Title = "Contacts List"; //Useless
                 return View("ContactList", contactGroupTags);
             }
             return RedirectToAction("Index", "Home");

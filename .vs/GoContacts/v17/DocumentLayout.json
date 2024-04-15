@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|c:\\users\\2321916\\onedrive - cognizant\\projects\\gocontacts\\gocontacts\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{915836FC-4BDD-42D5-A3CB-BEC574ABEA17}|GoContacts\\GoContacts.csproj|solutionrelative:gocontacts\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +47,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Startup.cs",
-              "RelativeDocumentMoniker": "GoContacts\\Startup.cs",
-              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Startup.cs",
-              "RelativeToolTip": "GoContacts\\Startup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Global.asax.cs",
+              "RelativeDocumentMoniker": "GoContacts\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\Global.asax.cs",
+              "RelativeToolTip": "GoContacts\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T05:10:41.324Z",
+              "WhenOpened": "2024-04-15T04:44:16.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "GoContacts\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "GoContacts\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T04:44:02.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Startup.Auth.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\Startup.Auth.cs",
+              "RelativeDocumentMoniker": "GoContacts\\App_Start\\Startup.Auth.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\Startup.Auth.cs",
+              "RelativeToolTip": "GoContacts\\App_Start\\Startup.Auth.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T04:44:00.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "GoContacts\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "GoContacts\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T04:43:59.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IdentityConfig.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\IdentityConfig.cs",
+              "RelativeDocumentMoniker": "GoContacts\\App_Start\\IdentityConfig.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\IdentityConfig.cs",
+              "RelativeToolTip": "GoContacts\\App_Start\\IdentityConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T04:43:58.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "GoContacts\\App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "GoContacts\\App_Start\\FilterConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T04:43:57.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "GoContacts\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\2321916\\OneDrive - Cognizant\\Projects\\GoContacts\\GoContacts\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "GoContacts\\App_Start\\BundleConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T04:43:55.967Z",
               "EditorCaption": ""
             }
           ]

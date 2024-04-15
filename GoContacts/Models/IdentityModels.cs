@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using GoContacts.Data;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -26,6 +27,8 @@ namespace GoContacts.Models
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<GroupTag> GroupTags { get; set; }
         public DbSet<ContactGroupTag> ContactGroupTags { get; set; }
+        //DbSet<ApplicationUser> IApplicationDbContext.Users { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
